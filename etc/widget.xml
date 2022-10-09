@@ -1,0 +1,35 @@
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+
+    <widget class="Codegenixuk\ImageBlock\Block\Widget\ImageBlock" id="codegenix_imageblock">
+        <label>Codegenixuk: Image Block</label>
+        <description>Image Block widget</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Label this block</label>
+            </parameter>
+            <parameter name="id" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>ID of block to use</label>
+            </parameter>
+            <parameter name="Align" xsi:type="select" required="true" visible="true" sort_order="30">
+                <label>Content Alignment</label>
+
+                <options>
+                    <option name="left" value="1">
+                        <label>Left</label>
+                    </option>
+
+                    <option name="center" value="2">
+                        <label>Centre</label>
+                    </option>
+
+                    <option name="right" value="3">
+                        <label>Right</label>
+                    </option>
+                </options>
+
+            </parameter>
+        </parameters>
+    </widget>
+
+</widgets>

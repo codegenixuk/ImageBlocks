@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Codegenixuk::top_level" title="Image Blocks" module="Codegenixuk_ImageBlock" sortOrder="9999" resource="Magento_Backend::content" parent="Codegenixuk_Base::index" />
+		<add id="Codegenixuk_ImageBlock::codegenixuk_imageblock_imageblock" title="Add New" module="Codegenixuk_ImageBlock" sortOrder="9999" resource="Magento_Backend::content" parent="Codegenixuk::top_level" action="codegenixuk_imageblock/imageblock/index"/>
+	</menu>
+</config>

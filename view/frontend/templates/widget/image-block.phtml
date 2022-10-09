@@ -1,0 +1,25 @@
+<?php
+
+if ($id = $block->escapeHtml($block->getData('id'))):
+
+    $image = $block->getImage($id);
+    $content = $block->getContent($id);
+    $align =  $block->getData('Align');
+
+    if ($image || $content): ?>
+
+        <section class="cg-image-block">
+
+            <div class="cg-image-block-container">
+
+                <div class="cg-image-block-image"><img src="<?=$image;?>" /></div>
+
+                <div class="cg-image-block-block align_<?=$align;?>"><?=$content;?></div>
+
+            </div>
+
+        </section>
+
+    <?php endif; ?>
+
+<?php endif; ?>

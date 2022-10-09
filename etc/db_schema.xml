@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="codegenixuk_imageblock_imageblock" resource="default" engine="innodb" comment="codegenixuk_imageblock_imageblock Table">
+		<column xsi:type="int" name="imageblock_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="imageblock_id"/>
+		</constraint>
+        <column name="Title" nullable="false" xsi:type="varchar" comment="Title" length="255"/>
+        <column name="Image" nullable="true" xsi:type="varchar" comment="Image" length="255"/>
+		<column name="Html" nullable="true" xsi:type="text" comment="Html"/>
+	</table>
+</schema>
